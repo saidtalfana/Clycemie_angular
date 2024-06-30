@@ -1,0 +1,46 @@
+<div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush" *ngFor="let glycemie of listOfGlycemie">
+      <li class="list-group-item" scope="row">{{glycemie.id}}</li>
+      <li class="list-group-item">{{glycemie.date}}</li>
+      <li class="list-group-item">{{glycemie.time}}</li>
+      <li class="list-group-item">{{glycemie.level}}</li>
+        <td><button type="button" class="btn btn-danger" (click)="delete(glycemie.id)" onClick="window.location.reload();">Delete</button></td>
+        <td><button type="button" class="btn btn-warning" [routerLink]="['/update',glycemie.id]">Update</button></td>
+
+</ul>
+  </div>
+
+
+  <button type="button" class="btn btn-primary" (click)="showAddGlycemie()" >Add Glycemie</button>
+<br><br>
+
+    
+<div *ngIf="show">
+    <form [formGroup]="glycemieForm" (ngSubmit)="handelSubmit()" >
+
+  <label>
+    id
+    <input type="number" formControlName="id">
+  </label>
+  <br>
+
+  <label>
+    Description
+    <input type="date" formControlName="date">
+  </label>
+  <br>
+
+  <label>
+    Date
+    <input type="time" formControlName="time">
+  </label>
+  <br>
+  <label>
+    Date
+    <input type="level" formControlName="level">
+  </label>
+  <br>
+
+  <input type="submit" value="Add This Todo">
+</form>
+</div>
