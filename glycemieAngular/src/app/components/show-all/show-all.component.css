@@ -1,0 +1,49 @@
+.card{
+    margin: 7px 7px;
+
+    border: 1px solid black;
+
+
+}
+.btn2{
+    padding: 0px 14px;
+    color: rgb(4, 4, 4);
+}
+.form{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 356px;
+    height: 250px;
+    align-self: center;
+    margin-bottom: 39px;
+
+
+}
+#btncli{
+    margin-left: 45px;
+    margin-bottom: 45px;
+
+}
+form{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid black;
+
+}
+.divc{
+    margin-top: 45px;
+    margin: 45px 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cfe6f4;
+    border: 1px solid black;
+
+}

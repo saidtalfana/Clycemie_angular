@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #cfe6f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+#line{
+    border-bottom: 1px solid gray;
+}
+.main-footer{
+
+
+    display: flex;
+    justify-content: space-around;
+}
+.footer-inf{
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+#diabete_day{
+    width: 150px;
+}
